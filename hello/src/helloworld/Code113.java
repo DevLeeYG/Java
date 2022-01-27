@@ -1,34 +1,37 @@
 package helloworld;
 
 
-class Studentss{
-	int number;
+
+class Frien {
+
 	String name;
-	double score;
+	int age;
 	
+	Frien(String name, int age){
+		this.name = name;
+		this.age = age;
+	}
+	void hello() {
+		System.out.println("Hello");
+	}
+	void printFrien() {
+		this.hello();
+		System.out.println("name:" + this.name +", age:"+this.age);
+	}
 	
-	
-Studentss(){}	
-Studentss(int number){
-	this.number = number;
-}
-Studentss(int number, String name){
-	this(number);
-	this.name = name;
-}
-Studentss(int number, String name, double score){
-	this(number,name);//number 와name만 부르른 생성자를 호출을 하고 있는데 첫줄에만 써야된다.
-	this.score = score;
 
-}
-	
-	
+	;
 }
 
-public class Code113 {
-	
+public class Code113{
 	public static void main(String[] args) {
-		Student s = new Student(10,"paul",88.5);
+	
+	  Frien d = new Frien("asd",3);
+	   d.printFrien();
+//	  System.out.println(d.name+","+d.age);
+	}
 
-}
+	
+	
+	
 }
