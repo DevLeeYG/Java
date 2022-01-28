@@ -41,6 +41,7 @@ public class Code122 {
 		
 		System.out.println("p1:("+p1.getX()+","+p1.getY()+")");
 		System.out.println("p2:("+p2.getX()+","+p2.getY()+")");
+	   add(p1,p2);
 	}
 	
 	
