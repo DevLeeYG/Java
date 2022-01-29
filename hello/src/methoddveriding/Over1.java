@@ -9,35 +9,73 @@ package methoddveriding;
 
 // //overriding은 자식 클래스에서 부모 클래스에 있는 메소드와 같은 형태를 말합니다.\\
 
-class Parent {
-   void print(){
-       System.out.println("i am parent print");
-   }
-   void test(int x){
-       System.out.println("Parent - test method");
+// class Parent {
+//    void print(){
+//        System.out.println("i am parent print");
+//    }
+//    void test(int x){
+//        System.out.println("Parent - test method");
 
-   }
+//    }
+// }
+
+
+// class Child extends Parent{
+//     void print(){
+//         super.print();
+//     }
+//     void test(int x){
+//         super.test(x);
+//     }
+// }
+
+
+// class Parent{
+//     void show(){
+//         System.out.println("i am parent show");
+//     }
+//     void print(){
+//         System.out.println("i am p");
+//     }
+// }
+
+// class Child extends Parent{
+//     void show(){
+//         System.out.println("i am child show");
+//     }
+//     void print(){
+//         System.out.println("i am child print");
+//     }
+// }
+
+//오버로딩과 오버라이딩이 같이 있는 예제
+
+
+
+class Parent{
+    void show(){
+        System.out.println("i am parent show");
+    }
+    void show(int data){
+        System.out.println("i am parent show - data : " + data);
+    }
+    void show(String msg){
+        System.out.println("i am parent : " + msg);
+    }
+
 }
-
 
 class Child extends Parent{
-    void print(){
-        super.print();
-    }
-    void test(int x){
-        super.test(x);
+    void show(int data){
+        System.out.println("i am child show - data: " + data);
     }
 }
 
-
-
-public class Over1 {
+public class Over1{
     public static void main(String[] args){
-    Parent p = new Parent();
-    p.print();
-    p.test(10);
-    Child c = new Child();
-    c.print();
-    c.test(20);
+        Child c = new Child();
+        c.show();
+        c.show(100);
+        c.show("hello");
     }
 }
