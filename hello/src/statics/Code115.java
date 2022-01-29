@@ -1,30 +1,30 @@
-package statics;
+// package statics;
 
 
-class Person{
-	static int count;
-	String name;
+// class Person{
+// 	static int count;
+// 	String name;
 	
-	Person(){
-		count++;
-	}
+// 	Person(){
+// 		count++;
+// 	}
 	
-	static void printCount() {
-		System.out.println("count:" + count);
-	}
+// 	static void printCount() {
+// 		System.out.println("count:" + count);
+// 	}
 	
-}
+// }
 
 
-public class Code115 {
+// public class Code115 {
 	
-	public static void main(String[] args) {
-		Person p1 = new Person();
-		Person p2 = new Person();
-		Person.printCount();
-		p1.printCount();
-		p2.printCount();
+// 	public static void main(String[] args) {
+// 		Person p1 = new Person();
+// 		Person p2 = new Person();
+// 		Person.printCount();
+// 		p1.printCount();
+// 		p2.printCount();
 		
-	}
+// 	}
 
-}
+// }
