@@ -75,7 +75,7 @@ public class Over1{
     public static void main(String[] args){
         Child c = new Child();
         c.show();
-        c.show(100);
+        c.show(100); //자식에서 먼저 찾아서 자식걸 가져온다.
         c.show("hello");
     }
 }
