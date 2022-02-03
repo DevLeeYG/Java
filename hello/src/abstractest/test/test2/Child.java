@@ -2,16 +2,24 @@ package abstractest.test.test2;
 
 public class Child extends Parent {
 
-    private int dataB;
+    // private int dataB;
 
-    Child(){}
-    Child(int dataA, int dataB){
-        super(dataA);
-        this.dataB = dataB;
+    // Child(){}
+    // Child(int dataA, int dataB){
+    //     super(dataA);
+    //     this.dataB = dataB;
+    // }
+    // void show(){
+    //     super.show();
+    //     System.out.println("child show:" + dataB);
+    // }
+
+    void print(){
+        System.out.println("I am child print");
     }
-    void show(){
-        super.show();
-        System.out.println("child show:" + dataB);
+
+    void call(){
+        System.out.println("I am child call");
     }
     
 }
