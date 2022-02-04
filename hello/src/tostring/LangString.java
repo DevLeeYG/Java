@@ -41,5 +41,8 @@ public class LangString  {
         String str2 = str.replace('a','A');
         System.out.println("str.replace('a','A'):" + str2);
 
+        System.out.println(str);
+        System.out.println(str.toString());
+
     }
 }
