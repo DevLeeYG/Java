@@ -27,3 +27,6 @@ public class Test10 {
     }
     
 }
+//ArrayIndexOutOfBoundsException
+//메소드 이름 옆에 throws 예외의 형태를 적고, 이것은 메소드에서 해당 예외가 발생하면 이메소드를 호출한 곳에서 예외처리를 하라는 이야기
+//main메소드가 makeArray() 메소드를 호출하니 main에서 makeArray()메소드를 호출하는 부분에 예오 ㅣ처리를 해야됨
