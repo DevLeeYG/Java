@@ -1,6 +1,7 @@
 package treeset;
 import java.util.Comparator;
 import java.util.TreeSet;
+import java.util.Iterator;
 
 class Persson extends Personf{
 
@@ -8,8 +9,10 @@ class Persson extends Personf{
 
     
 	
-    public Persson(){
-        super();
+ 
+
+    public Persson(int id, int score){
+       super(id,score);
     }
 
     int getId() {
@@ -38,9 +41,15 @@ public class Comparatorif {
     public static void main(String[] args){
         TreeSet<Persson> ts = new TreeSet<>(new PersonComparator());
 
-        ts.add(new Personf(5,10));
+        ts.add(new Persson(3,83));
+        ts.add(new Persson(5,90));
+        ts.add(new Persson(1,93));
+        ts.add(new Persson(2,88));
+        ts.add(new Persson(4,70));
 
-        System.out.println(ts);
+     for(Persson p :ts){
+         System.out.println(p);
+     }
 
 
      
