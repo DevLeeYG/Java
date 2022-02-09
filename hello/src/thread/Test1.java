@@ -41,9 +41,5 @@ public class Test1 {
         }catch(InterruptedException e){
             System.out.println(e.getMessage());
         }
-	
-     
-	
 	}
-    
 }
