@@ -6,13 +6,14 @@ class Personf implements Comparable<Personf>{
 
     protected int id;
     private int score;
-    Personf(){}
+    public Personf(){}
     Personf(int id, int score){ this.id = id; this.score = score;}
     public String toString(){return "[id=" + id + ", score = "+ score +"]";}
 
     public int compareTo(Personf p){
 		return this.id - p.id;
 	}
+ 
     
 }
 
