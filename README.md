@@ -1,1 +1,1 @@
-# Java PRACTICE
+# Java example code practice
